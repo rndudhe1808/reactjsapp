@@ -68,3 +68,84 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+ oc new-app https://github.com/rndudhe1808/reactjsapp.git --strategy docker
+   48  oc get route
+   49  oc get pods
+   50  oc get pods -w
+   51  oc get pods -w
+   52  oc get route
+   53  oc get pods -w
+   54  oc get svc
+   55  oc get pods -w
+   56  oc expose pod reactjsapp-1-build --port=3000
+   57  oc get svc
+   58  oc expose svc reactjsapp-1-build
+   59  oc get route
+   60  oc get pods -w
+   61  oc get deployment
+   62  oc delete svc reactjsapp-1-build
+   63  oc delete route reactjsapp-1-build
+   64  oc expose deployment  reactjsapp
+   65  oc expose deployment  reactjsapp --port=3000
+   66  oc expose svc reactjsapp
+   67  oc get route
+   68  history
+
+   vi Dockerfile
+   14  docker build -t reactjs -f Dockerfile.
+   15  docker build -t reactjs 
+   16  docker build -t reactjs .
+   17  docker images
+   18  docekr run -p 3000:30000 -itd reactjs 
+   19  docker run -p 3000:30000 -itd reactjs 
+   20  docker ps
+   21  docker run -p 3000:3000 -itd reactjs 
+   22  docker ps 
+   23  docker rm -f 93b2d9497669
+   24  docker run -p 4000:3000 -itd reactjs 
+   25  docekr ps
+   26  docker ps
+   27  ssh-keygen
+   28  ls
+   29  cd /.root/ssh
+   30  cd /root/.ssh
+   31  ls
+   32  cat id_rsa.pub 
+   33  git clone git@github.com:rndudhe1808/reactjsapp.git
+   34  pwd
+   35  cd /
+   36  ls
+   37  cd /home/
+   38  ls
+   39  cd ..
+   40  ls
+   41  cd ..
+   42  ls
+   43  cd /root
+   44  ls
+   45  cd node-v18.18.0-linux-x64/
+   46  ls
+   47  cd hello/
+   48  ls
+   49  cd ..
+   50  ls
+   51  cd /root/.ssh
+   52  ls
+   53  mv reactjsapp  /root
+   54  cd /root
+   55  ls
+   56  cd node-v18.18.0-linux-x64/hello/
+   57  ls
+   58  cp -rvf * /root/reactjsapp/
+   59  ls
+   60  cd /root/reactjsapp/
+   61  ls
+   62  git add .
+   63  git commit -m "test"
+   64  git config --global user.email "you@example.com"
+   65  git config --global user.name "Your Name"
+   66  git commit -m "test"
+   67  git push
