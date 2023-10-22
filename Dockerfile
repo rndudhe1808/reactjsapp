@@ -1,6 +1,6 @@
 FROM node:alpine AS development
 
-# Declaring env
+# Declaring enviroment variable 
 ENV NODE_ENV development
 
 # Setting up the work directory
