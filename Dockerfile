@@ -10,7 +10,7 @@ WORKDIR /react-app
 COPY ./package.json /react-app
 RUN npm install
 
-# Copying all the files in our project
+# Copying all the files in our project.
 COPY . .
 
 # Starting our application
